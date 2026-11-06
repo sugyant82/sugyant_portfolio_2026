@@ -7,7 +7,7 @@ export default function About() {
     <section className="section" id="about">
       <div className="container">
         <header className="section__head reveal">
-          <span className="section__kicker">01 — About</span>
+          <span className="section__kicker">01 - About</span>
           <h2 className="section__title">A full stack engineer who ships with care</h2>
         </header>
 

@@ -37,13 +37,13 @@ export const stats = [
 
 export const about = {
   paragraphs: [
-    'I design and ship cloud-native platforms end to end — from Java and Spring Boot microservices to the React front ends that sit on top of them. Over 15+ years I have delivered mission-critical systems in banking, insurance and healthcare across New Zealand and Singapore.',
+    'I design and ship cloud-native platforms end to end - from Java and Spring Boot microservices to the React front ends that sit on top of them. Over 15 years I have delivered mission-critical systems in banking, insurance and healthcare across New Zealand and Singapore.',
     'Today I am a Senior Developer at BNZ, building KiwiSaver and wealth APIs for the bank’s mobile app, owning fortnightly releases, security remediation and production support. I work AI-first with GitHub Copilot, MCP skills and the BNZ AI Hub to move faster while keeping quality high.',
-    'Beyond the technology, I’m a team-oriented engineer who values clear communication, pair programming and mentoring — helping teams raise their standards and take ownership of outcomes from design through to production.',
+    'Beyond the technology, I’m a team-oriented engineer who values clear communication, pair programming and mentoring - helping teams raise their standards and take ownership of outcomes from design through to production.',
   ],
   highlights: [
-    'Leads releases end to end — builds, security scans & rollouts',
-    'Has led and mentored teams of 5–6 engineers',
+    'Leads releases end to end - builds, security scans & rollouts',
+    'Has led and mentored teams of 5-6 engineers',
     'Deep in Kubernetes, OpenShift, AWS EKS & CI/CD',
     'MBA (Murdoch University) + B.Tech in Electronics & Comms',
   ],
@@ -88,7 +88,7 @@ export const experience = [
     company: 'BNZ',
     logo: bnz,
     location: 'Queen Street, Auckland',
-    period: 'Aug 2026 – Present',
+    period: 'Aug 2026 - Present',
     current: true,
     points: [
       'Deliver KiwiSaver wealth-domain APIs for the BNZ mobile app using Java & Spring Boot microservices.',
@@ -104,7 +104,7 @@ export const experience = [
     company: 'Southern Cross Health Insurance',
     logo: southernCross,
     location: 'Auckland CBD',
-    period: 'Dec 2023 – Aug 2026',
+    period: 'Dec 2023 - Aug 2026',
     points: [
       'Built & deployed Node.js microservices on Red Hat OpenShift with 3Scale API Gateway and ArgoCD GitOps.',
       'Developed an Angular login portal with Azure AD B2C, improving authentication experience and security.',
@@ -118,7 +118,7 @@ export const experience = [
     company: 'OCBC Bank',
     logo: ocbc,
     location: 'Singapore',
-    period: 'Jul 2022 – Nov 2023',
+    period: 'Jul 2022 - Nov 2023',
     points: [
       'Led end-to-end migration of a legacy trading app to Java, Spring Boot, React & OpenShift with minimal downtime.',
       'Built RESTful Spring Boot APIs and a React/TypeScript UI, improving transaction responsiveness.',
@@ -132,13 +132,13 @@ export const experience = [
     company: 'Prudential',
     logo: prudential,
     location: 'Singapore',
-    period: 'Jan 2017 – Jul 2022',
+    period: 'Jan 2017 - Jul 2022',
     points: [
       'Developed Java, React & Azure microservices and front end for the primary point-of-sale application.',
       'Delivered a high-performance SQS Engine API to streamline message processing and reduce latency.',
       'Led migration from Dynatrace to Prometheus & Grafana for richer metrics and alerting.',
       'Improved Spring Batch job efficiency ~25% and cut critical SQL query response times by 30%.',
-      'Led a team of 5–6 engineers, managed infrastructure releases and introduced pair programming.',
+      'Led a team of 5-6 engineers, managed infrastructure releases and introduced pair programming.',
     ],
   },
   {
@@ -146,9 +146,9 @@ export const experience = [
     company: 'IBM',
     logo: ibm,
     location: 'Singapore',
-    period: 'Dec 2014 – Dec 2016',
+    period: 'Dec 2014 - Dec 2016',
     points: [
-      'Built & maintained outpatient applications for nine government-run national polyclinics in Singapore —',
+      'Built & maintained outpatient applications for nine government-run national polyclinics in Singapore -',
       'a system generating millions in monthly revenue.',
     ],
   },
@@ -157,7 +157,7 @@ export const experience = [
     company: 'Nucleus Software (UOB Bank)',
     logo: uob,
     location: 'Singapore',
-    period: 'Aug 2011 – Nov 2014',
+    period: 'Aug 2011 - Nov 2014',
     points: [
       'Led development of a credit & loan origination system for a major Singapore bank,',
       'including expansion across 19 countries.',
@@ -168,7 +168,7 @@ export const experience = [
     company: 'ACI Worldwide',
     logo: aci,
     location: 'Bangalore, India',
-    period: 'Apr 2007 – Aug 2011',
+    period: 'Apr 2007 - Aug 2011',
     points: ['Built banking product features and user interfaces for a US-based product development company.'],
   },
 ]
@@ -178,7 +178,7 @@ export const projects = [
     title: 'Darjeeling Kitchen',
     tagline: 'MERN food-ordering app · Stripe payments',
     description:
-      'A full-stack food-ordering app — browse the menu, build a cart, authenticate and pay with Stripe, end to end. React + Vite front end on a Node/Express & MongoDB backend.',
+      'A full-stack food-ordering app - browse the menu, build a cart, authenticate and pay with Stripe, end to end. React + Vite front end on a Node/Express & MongoDB backend.',
     tags: ['React', 'Node', 'Express', 'MongoDB', 'Stripe'],
     demo: 'https://darjeelingkitchenfe.vercel.app',
     links: [
@@ -187,10 +187,10 @@ export const projects = [
     ],
   },
   {
-    title: 'Darjeeling Kitchen — Admin',
+    title: 'Darjeeling Kitchen - Admin',
     tagline: 'Admin console for the food app',
     description:
-      'The operator side of Darjeeling Kitchen: manage menu items, track orders and keep inventory in sync — built with React, Node and MongoDB.',
+      'The operator side of Darjeeling Kitchen: manage menu items, track orders and keep inventory in sync - built with React, Node and MongoDB.',
     tags: ['React', 'Node', 'MongoDB'],
     demo: 'https://darjeelingkitchenadm.vercel.app',
     links: [{ label: 'Code', href: 'https://github.com/sugyant82/darjeelingkitchenadm' }],
@@ -207,7 +207,7 @@ export const projects = [
     title: 'Hillsoft POS',
     tagline: 'Point-of-sale & inventory',
     description:
-      'A lightweight point-of-sale and inventory-management interface for small retail — browse stock, ring up sales and keep item counts up to date.',
+      'A lightweight point-of-sale and inventory-management interface for small retail - browse stock, ring up sales and keep item counts up to date.',
     tags: ['JavaScript', 'HTML', 'POS'],
     links: [{ label: 'Code', href: 'https://github.com/sugyant82/hillsoft' }],
   },
@@ -227,19 +227,19 @@ export const education = [
   {
     title: 'Master of Business Administration',
     org: 'Murdoch University, Perth (via Kaplan, Singapore)',
-    period: '2020 – 2021',
+    period: '2020 - 2021',
     logo: murdoch,
   },
   {
     title: 'B.Tech, Electronics & Communication Engineering',
     org: 'Sikkim Manipal Institute of Technology, India',
-    period: '2001 – 2005',
+    period: '2001 - 2005',
     logo: sikkimManipal,
   },
   {
     title: 'Accelerated ANIIT, Software Engineering',
     org: 'NIIT Academy, Bangalore',
-    period: '2006 – 2007',
+    period: '2006 - 2007',
     logo: niit,
   },
 ]

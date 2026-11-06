@@ -22,10 +22,10 @@ export default function Hero() {
       <div className="container hero__inner">
         <div className="hero__content reveal">
           <p className="hero__eyebrow">
-            <span className="hero__status" /> Senior Developer @ BNZ · Auckland
+            <span className="hero__status" /> Nau mai · Senior Developer @ BNZ · Auckland
           </p>
           <h1 className="hero__title">
-            Hi, I&rsquo;m {profile.firstName}. I build <span className="grad">secure, cloud-native</span> platforms.
+            Kia ora, I&rsquo;m {profile.firstName}. I build <span className="grad">secure, cloud-native</span> platforms.
           </h1>
           <p className="hero__role">
             {profile.role} <span className="hero__sep">·</span> {profile.tagline}

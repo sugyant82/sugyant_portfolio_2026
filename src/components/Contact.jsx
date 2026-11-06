@@ -43,13 +43,13 @@ export default function Contact() {
       <div className="container">
         <div className="cta reveal">
           <div className="cta__glow" aria-hidden="true" />
-          <span className="section__kicker">06 — Contact</span>
+          <span className="section__kicker">06 - Contact</span>
           <h2 className="cta__title">
             Let&rsquo;s build something <span className="grad">reliable</span> together.
           </h2>
           <p className="cta__lead">
             Open to senior engineering roles and interesting problems. Send a note below and it lands
-            straight in my inbox &mdash; I usually reply within a day.
+            straight in my inbox - I usually reply within a day. Ngā mihi for stopping by.
           </p>
 
           <form
@@ -103,7 +103,7 @@ export default function Contact() {
 
             {status === 'ok' && (
               <p className="form__status form__status--ok" role="status">
-                Thanks &mdash; your message is on its way. I&rsquo;ll get back to you shortly.
+                Ngā mihi - your message is on its way. I&rsquo;ll get back to you shortly.
               </p>
             )}
             {status === 'error' && (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Icon from './Icons'
+import ThemeToggle from './ThemeToggle'
 import { profile } from '../data/content'
 
 const links = [
@@ -49,14 +50,17 @@ export default function Navbar() {
           </a>
         </nav>
 
-        <button
-          className="nav__toggle"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <Icon name={open ? 'close' : 'menu'} />
-        </button>
+        <div className="nav__actions">
+          <ThemeToggle />
+          <button
+            className="nav__toggle"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <Icon name={open ? 'close' : 'menu'} />
+          </button>
+        </div>
       </div>
       {open && <button className="nav__scrim" aria-hidden="true" tabIndex={-1} onClick={close} />}
     </header>

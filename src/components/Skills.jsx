@@ -6,7 +6,7 @@ export default function Skills() {
     <section className="section section--alt" id="skills">
       <div className="container">
         <header className="section__head reveal">
-          <span className="section__kicker">02 — Toolkit</span>
+          <span className="section__kicker">02 - Toolkit</span>
           <h2 className="section__title">Skills &amp; technologies</h2>
           <p className="section__lead">
             The stack I reach for to deliver production-grade, cloud-native systems end to end.

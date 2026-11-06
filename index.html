@@ -6,16 +6,32 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <title>Sugyant Chettri — Senior Software Engineer</title>
+    <!-- Set colour theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var q = new URLSearchParams(location.search).get('theme');
+          var t = (q === 'dark' || q === 'light') ? q : localStorage.getItem('theme');
+          if (t !== 'dark' && t !== 'light') {
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', t);
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute('content', t === 'dark' ? '#0b0c0f' : '#ffffff');
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Sugyant Chettri - Senior Software Engineer</title>
     <meta
       name="description"
-      content="Sugyant Chettri — Senior Software Engineer with 15+ years delivering secure, scalable, cloud-native platforms across banking, insurance and healthcare in New Zealand and Singapore."
+      content="Sugyant Chettri - Senior Software Engineer with 15+ years delivering secure, scalable, cloud-native platforms across banking, insurance and healthcare in New Zealand and Singapore."
     />
     <meta name="author" content="Sugyant Chettri" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sugyant Chettri — Senior Software Engineer" />
+    <meta property="og:title" content="Sugyant Chettri - Senior Software Engineer" />
     <meta
       property="og:description"
       content="15+ years building Java, Spring Boot & cloud-native microservices across banking, insurance and healthcare."

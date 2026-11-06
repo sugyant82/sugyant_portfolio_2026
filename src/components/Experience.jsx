@@ -5,7 +5,7 @@ export default function Experience() {
     <section className="section" id="experience">
       <div className="container">
         <header className="section__head reveal">
-          <span className="section__kicker">03 — Journey</span>
+          <span className="section__kicker">03 - Journey</span>
           <h2 className="section__title">Professional experience</h2>
           <p className="section__lead">
             15+ years across banking, insurance and healthcare in New Zealand and Singapore.

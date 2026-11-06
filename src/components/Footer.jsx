@@ -12,7 +12,7 @@ export default function Footer() {
         </a>
 
         <p className="footer__note">
-          Designed &amp; built with React. &copy; {new Date().getFullYear()} {profile.name}.
+          Ngā mihi for visiting. Designed &amp; built with React. &copy; {new Date().getFullYear()} {profile.name}.
         </p>
 
         <div className="footer__social">
