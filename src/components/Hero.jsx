@@ -9,6 +9,14 @@ export default function Hero() {
         <span className="hero__glow hero__glow--1" />
         <span className="hero__glow hero__glow--2" />
         <span className="hero__grid" />
+        <svg className="hero__koru" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+          <path
+            d="M16 110a94 94 0 1 1 94 94 58 58 0 1 1-58-58 28 28 0 1 1 28 28"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+        </svg>
       </div>
 
       <div className="container hero__inner">

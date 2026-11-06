@@ -4,6 +4,7 @@ import { profile } from '../data/content'
 export default function Footer() {
   return (
     <footer className="footer">
+      <div className="motif-divider" aria-hidden="true" />
       <div className="container footer__inner">
         <a href="#top" className="footer__brand">
           <span className="nav__monogram">SC</span>

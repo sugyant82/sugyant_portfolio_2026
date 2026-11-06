@@ -11,14 +11,17 @@
   --surface: #ffffff;
   --surface-2: #fafafb;
 
-  --ink: #111114;           /* headings / darkest */
-  --ink-2: #1d1d1f;
-  --text: #33333a;          /* body */
-  --text-soft: #6a6a73;
-  --text-dim: #9a9aa3;
+  --ink: #14161b;           /* headings / darkest (cool graphite) */
+  --ink-2: #1e222a;
+  --text: #2b2f37;          /* body */
+  --text-soft: #4d525c;     /* secondary — darkened for readability */
+  --text-dim: #6a6e78;      /* tertiary — darkened for readability */
 
-  --line: rgba(17, 17, 20, 0.09);
-  --line-strong: rgba(17, 17, 20, 0.17);
+  --line: rgba(20, 22, 27, 0.10);
+  --line-strong: rgba(20, 22, 27, 0.18);
+
+  /* Māori-inspired accent (muted pōhutukawa red) — used sparingly */
+  --accent: #9e3b32;
 
   /* brushed-metal sheen for emphasised words */
   --grad: linear-gradient(135deg, #1d1d1f 0%, #9aa0a8 52%, #1d1d1f 100%);
@@ -314,6 +317,31 @@ h1, h2, h3, h4 {
   display: inline-block; font-family: var(--font-display); font-weight: 500;
   font-size: 0.76rem; letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--text-dim); margin-bottom: 0.9rem;
+}
+/* koru — a small unfurling-frond mark before each section label */
+.section__kicker::before {
+  content: ''; display: inline-block; width: 15px; height: 15px;
+  margin-right: 0.55rem; vertical-align: -3px;
+  background: var(--accent);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%3E%3Cpath%20d='M4%2013a8%208%200%201%201%208%208%205%205%200%201%201-5-5%202%202%200%201%201%202%202'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%3E%3Cpath%20d='M4%2013a8%208%200%201%201%208%208%205%205%200%201%201-5-5%202%202%200%201%201%202%202'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* niho taniwha (tukutuku-style) divider — a subtle woven band */
+.motif-divider {
+  width: 190px; height: 12px; margin: 0 auto 24px;
+  background: var(--text-dim); opacity: 0.55;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2012'%20fill='none'%20stroke='black'%20stroke-width='1.6'%20stroke-linejoin='round'%3E%3Cpath%20d='M0%2010.5%206%201.5%2012%2010.5%2018%201.5%2024%2010.5'/%3E%3C/svg%3E") repeat-x center / 24px 12px;
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2012'%20fill='none'%20stroke='black'%20stroke-width='1.6'%20stroke-linejoin='round'%3E%3Cpath%20d='M0%2010.5%206%201.5%2012%2010.5%2018%201.5%2024%2010.5'/%3E%3C/svg%3E") repeat-x center / 24px 12px;
+}
+
+/* koru watermark in the hero backdrop */
+.hero__koru {
+  position: absolute; z-index: 0; pointer-events: none;
+  width: min(58vw, 430px); height: auto;
+  right: -46px; bottom: -40px;
+  color: var(--ink); opacity: 0.055;
+  transform: rotate(6deg);
 }
 .section__title { font-size: clamp(1.8rem, 5vw, 2.7rem); font-weight: 600; letter-spacing: -0.025em; }
 .section__lead { color: var(--text-soft); margin: 1rem 0 0; font-size: 1.04rem; }
