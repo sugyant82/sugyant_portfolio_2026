@@ -83,10 +83,10 @@
 
 :root[data-theme="dark"] ::selection { background: rgba(255, 255, 255, 0.2); color: #fff; }
 
-/* White logo tiles read poorly on black, so show them in light mode only:
-   hide the scrolling strip and the per-role logo chips in dark mode. */
-:root[data-theme="dark"] .marquee { display: none; }
-:root[data-theme="dark"] .timeline__logo { display: none; }
+/* Logo slider keeps the same white backdrop in dark mode so the greyscale
+   marks read identically to light mode. (The per-role experience logo chips
+   are already white tiles in both themes.) */
+:root[data-theme="dark"] .marquee { background: #ffffff; }
 
 * { box-sizing: border-box; }
 
