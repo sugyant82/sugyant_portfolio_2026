@@ -49,11 +49,13 @@
       Hidden static form so Netlify's build-time crawler detects the form
       fields for the React-rendered contact form. Do not remove.
     -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
+      <input name="bot-field" />
     </form>
 
     <div id="root"></div>
