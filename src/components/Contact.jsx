@@ -35,7 +35,7 @@ export default function Contact() {
     { icon: 'mail', label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
     { icon: 'phone', label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
     { icon: 'linkedin', label: 'LinkedIn', value: 'in/sugyant', href: profile.linkedin },
-    { icon: 'pin', label: 'Location', value: 'Auckland, New Zealand', href: null },
+    { icon: 'github', label: 'GitHub', value: 'sugyant82', href: profile.github },
   ]
 
   return (
@@ -43,7 +43,7 @@ export default function Contact() {
       <div className="container">
         <div className="cta reveal">
           <div className="cta__glow" aria-hidden="true" />
-          <span className="section__kicker">05 — Contact</span>
+          <span className="section__kicker">06 — Contact</span>
           <h2 className="cta__title">
             Let&rsquo;s build something <span className="grad">reliable</span> together.
           </h2>

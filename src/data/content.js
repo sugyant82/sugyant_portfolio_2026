@@ -22,6 +22,7 @@ export const profile = {
   email: 'sugyant@gmail.com',
   phone: '+64 2902 379730',
   linkedin: 'https://linkedin.com/in/sugyant',
+  github: 'https://github.com/sugyant82',
   cv: '/Sugyant_Chettri_CV.pdf',
   coverLetter: '/Sugyant_Chettri_Cover_Letter.pdf',
   badges: ['NZ Permanent Resident', 'NZ Full Driver Licence (Class 1)', 'Open to opportunities'],
@@ -169,6 +170,46 @@ export const experience = [
     location: 'Bangalore, India',
     period: 'Apr 2007 – Aug 2011',
     points: ['Built banking product features and user interfaces for a US-based product development company.'],
+  },
+]
+
+export const projects = [
+  {
+    title: 'Darjeeling Kitchen',
+    tagline: 'MERN food-ordering app · Stripe payments',
+    description:
+      'A full-stack food-ordering app — browse the menu, build a cart, authenticate and pay with Stripe, end to end. React + Vite front end on a Node/Express & MongoDB backend.',
+    tags: ['React', 'Node', 'Express', 'MongoDB', 'Stripe'],
+    demo: 'https://darjeelingkitchenfe.vercel.app',
+    links: [
+      { label: 'Front end', href: 'https://github.com/sugyant82/darjeelingkitchenfe' },
+      { label: 'Back end', href: 'https://github.com/sugyant82/darjeelingkitchenbe' },
+    ],
+  },
+  {
+    title: 'Darjeeling Kitchen — Admin',
+    tagline: 'Admin console for the food app',
+    description:
+      'The operator side of Darjeeling Kitchen: manage menu items, track orders and keep inventory in sync — built with React, Node and MongoDB.',
+    tags: ['React', 'Node', 'MongoDB'],
+    demo: 'https://darjeelingkitchenadm.vercel.app',
+    links: [{ label: 'Code', href: 'https://github.com/sugyant82/darjeelingkitchenadm' }],
+  },
+  {
+    title: 'Animal Service',
+    tagline: 'Spring Boot REST API · Java OOP',
+    description:
+      'A Spring Boot RESTful service (plus a standalone Java app) that models an animal domain to explore clean inheritance and polymorphism through queryable endpoints.',
+    tags: ['Java', 'Spring Boot', 'REST'],
+    links: [{ label: 'Code', href: 'https://github.com/sugyant82/animalservice' }],
+  },
+  {
+    title: 'Hillsoft POS',
+    tagline: 'Point-of-sale & inventory',
+    description:
+      'A lightweight point-of-sale and inventory-management interface for small retail — browse stock, ring up sales and keep item counts up to date.',
+    tags: ['JavaScript', 'HTML', 'POS'],
+    links: [{ label: 'Code', href: 'https://github.com/sugyant82/hillsoft' }],
   },
 ]
 

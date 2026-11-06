@@ -18,6 +18,9 @@ export default function Footer() {
           <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <Icon name="linkedin" size={20} />
           </a>
+          <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+            <Icon name="github" size={20} />
+          </a>
           <a href={`mailto:${profile.email}`} aria-label="Email">
             <Icon name="mail" size={20} />
           </a>

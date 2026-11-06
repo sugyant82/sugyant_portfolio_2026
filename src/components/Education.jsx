@@ -6,7 +6,7 @@ export default function Education() {
     <section className="section section--alt" id="education">
       <div className="container">
         <header className="section__head reveal">
-          <span className="section__kicker">04 — Credentials</span>
+          <span className="section__kicker">05 — Credentials</span>
           <h2 className="section__title">Education, certifications &amp; awards</h2>
         </header>
 

@@ -378,6 +378,44 @@ h1, h2, h3, h4 {
 @media (min-width: 680px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 980px) { .skills-grid { grid-template-columns: repeat(3, 1fr); } }
 
+/* ---------- Projects / Showcase ---------- */
+.projects-grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
+.project-card {
+  display: flex; flex-direction: column;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.6rem;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.project-card:hover { transform: translateY(-4px); border-color: var(--line-strong); box-shadow: var(--shadow-soft); }
+.project-card__head { display: flex; align-items: center; justify-content: space-between; color: var(--text-dim); margin-bottom: 1rem; }
+.project-card__index { font-family: var(--font-display); font-weight: 500; font-size: 0.8rem; letter-spacing: 0.22em; }
+.project-card__title { font-size: 1.3rem; font-weight: 600; }
+.project-card__tagline { font-family: var(--font-display); font-weight: 500; font-size: 0.82rem; color: var(--text-dim); margin: 0.35rem 0 0; }
+.project-card__desc { color: var(--text-soft); font-size: 0.95rem; margin: 0.9rem 0 0; }
+.project-card__tags { list-style: none; padding: 0; margin: auto 0 0; display: flex; flex-wrap: wrap; gap: 0.45rem; padding-top: 1.1rem; }
+.project-card__tags li {
+  font-size: 0.76rem; color: var(--text-soft);
+  background: var(--bg-2); border: 1px solid var(--line);
+  padding: 0.28rem 0.6rem; border-radius: 7px;
+}
+.project-card__links {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+}
+.project-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--font-display); font-weight: 500; font-size: 0.84rem;
+  color: var(--ink);
+  border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.44rem 0.9rem;
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease, color 0.18s ease;
+}
+.project-link:hover { border-color: var(--ink); background: var(--bg-2); transform: translateY(-1px); }
+.project-link--demo { background: var(--ink); color: #fff; border-color: var(--ink); }
+.project-link--demo:hover { background: #000; color: #fff; }
+.projects-cta { display: flex; justify-content: center; margin-top: 34px; }
+
+@media (min-width: 760px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+
 /* ---------- Experience timeline ---------- */
 .timeline { list-style: none; margin: 0; padding: 0; position: relative; }
 .timeline::before {
