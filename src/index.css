@@ -83,11 +83,8 @@
 
 :root[data-theme="dark"] ::selection { background: rgba(255, 255, 255, 0.2); color: #fff; }
 
-/* Company logos keep a light tile in dark mode so brand marks stay legible */
-:root[data-theme="dark"] .marquee__logo {
-  background: var(--logo-chip); border-radius: 10px; padding: 6px 14px;
-  filter: none; opacity: 0.92;
-}
+/* Hide the scrolling logo strip in dark mode (reads poorly on black) */
+:root[data-theme="dark"] .marquee { display: none; }
 
 * { box-sizing: border-box; }
 
