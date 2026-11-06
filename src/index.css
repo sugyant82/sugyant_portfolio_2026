@@ -59,8 +59,8 @@
   --ink: #f3f4f7;
   --ink-2: #dfe2e8;
   --text: #c6cad3;
-  --text-soft: #969caa;
-  --text-dim: #717784;
+  --text-soft: #d7c389;      /* warm muted gold - complements the black backdrop */
+  --text-dim: #9b9068;
 
   --line: rgba(255, 255, 255, 0.11);
   --line-strong: rgba(255, 255, 255, 0.22);
@@ -83,8 +83,10 @@
 
 :root[data-theme="dark"] ::selection { background: rgba(255, 255, 255, 0.2); color: #fff; }
 
-/* Hide the scrolling logo strip in dark mode (reads poorly on black) */
+/* White logo tiles read poorly on black, so show them in light mode only:
+   hide the scrolling strip and the per-role logo chips in dark mode. */
 :root[data-theme="dark"] .marquee { display: none; }
+:root[data-theme="dark"] .timeline__logo { display: none; }
 
 * { box-sizing: border-box; }
 
