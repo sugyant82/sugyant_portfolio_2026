@@ -2,11 +2,14 @@
 
 import ibm from '../assets/logos/ibm.svg'
 import prudential from '../assets/logos/prudential.svg'
-import southernCross from '../assets/logos/southern-cross.webp'
-import aci from '../assets/logos/aci.webp'
-import bnz from '../assets/logos/bnz.webp'
-import ocbc from '../assets/logos/ocbc.jpg'
+import southernCross from '../assets/logos/southern-cross.png'
+import aci from '../assets/logos/aci.png'
+import bnz from '../assets/logos/bnz.png'
+import ocbc from '../assets/logos/ocbc.png'
 import uob from '../assets/logos/uob.png'
+import murdoch from '../assets/logos/murdoch.png'
+import sikkimManipal from '../assets/logos/sikkim-manipal.jpg'
+import niit from '../assets/logos/niit.png'
 
 export const profile = {
   name: 'Sugyant Chettri',
@@ -184,16 +187,19 @@ export const education = [
     title: 'Master of Business Administration',
     org: 'Murdoch University, Perth (via Kaplan, Singapore)',
     period: '2020 – 2021',
+    logo: murdoch,
   },
   {
     title: 'B.Tech, Electronics & Communication Engineering',
     org: 'Sikkim Manipal Institute of Technology, India',
     period: '2001 – 2005',
+    logo: sikkimManipal,
   },
   {
     title: 'Accelerated ANIIT, Software Engineering',
     org: 'NIIT Academy, Bangalore',
     period: '2006 – 2007',
+    logo: niit,
   },
 ]
 

@@ -17,10 +17,17 @@ export default function Education() {
             </h3>
             <ul className="creds__list">
               {education.map((e) => (
-                <li key={e.title}>
-                  <p className="creds__title">{e.title}</p>
-                  <p className="creds__org">{e.org}</p>
-                  <span className="creds__period">{e.period}</span>
+                <li className="creds__edu" key={e.title}>
+                  {e.logo && (
+                    <span className="creds__edu-logo">
+                      <img src={e.logo} alt={`${e.org} logo`} loading="lazy" />
+                    </span>
+                  )}
+                  <div>
+                    <p className="creds__title">{e.title}</p>
+                    <p className="creds__org">{e.org}</p>
+                    <span className="creds__period">{e.period}</span>
+                  </div>
                 </li>
               ))}
             </ul>

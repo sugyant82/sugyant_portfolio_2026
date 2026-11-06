@@ -398,11 +398,12 @@ h1, h2, h3, h4 {
 .timeline__card:hover { border-color: var(--line-strong); transform: translateX(3px); box-shadow: var(--shadow-xs); }
 .timeline__top { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; margin-bottom: 0.95rem; }
 .timeline__logo {
-  flex-shrink: 0; width: 52px; height: 52px; border-radius: 12px;
-  background: #fff; display: grid; place-items: center; padding: 8px;
+  flex-shrink: 0; height: 54px; min-width: 54px; max-width: 160px;
+  border-radius: 12px;
+  background: #fff; display: grid; place-items: center; padding: 9px 15px;
   border: 1px solid var(--line);
 }
-.timeline__logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.timeline__logo img { max-height: 36px; max-width: 128px; width: auto; height: auto; object-fit: contain; }
 .timeline__meta { flex: 1; min-width: 180px; }
 .timeline__role { font-size: 1.13rem; font-weight: 600; }
 .timeline__company { margin: 0.18rem 0 0; color: var(--text-soft); font-size: 0.92rem; }
@@ -429,16 +430,16 @@ h1, h2, h3, h4 {
   mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
-.marquee__track { display: flex; gap: 48px; width: max-content; animation: marquee 34s linear infinite; }
+.marquee__track { display: flex; align-items: center; gap: 56px; width: max-content; animation: marquee 36s linear infinite; }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee__logo {
   flex-shrink: 0; height: 40px; display: grid; place-items: center;
-  padding: 8px 18px;
-  opacity: 0.6; filter: grayscale(1);
+  padding: 0 4px;
+  opacity: 0.55; filter: grayscale(1);
   transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
 }
 .marquee__logo:hover { opacity: 1; filter: grayscale(0); transform: translateY(-2px); }
-.marquee__logo img { height: 100%; width: auto; max-width: 120px; object-fit: contain; }
+.marquee__logo img { max-height: 36px; width: auto; max-width: 150px; object-fit: contain; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* ---------- Credentials ---------- */
@@ -451,6 +452,13 @@ h1, h2, h3, h4 {
 .creds__heading svg { color: var(--ink); }
 .creds__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
 .creds__list li { position: relative; }
+.creds__edu { display: flex; align-items: flex-start; gap: 0.85rem; }
+.creds__edu-logo {
+  flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px;
+  background: #fff; border: 1px solid var(--line);
+  display: grid; place-items: center; padding: 7px;
+}
+.creds__edu-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .creds__list--plain li { display: flex; align-items: flex-start; gap: 0.55rem; color: var(--text-soft); font-size: 0.92rem; }
 .creds__list--plain svg { color: var(--ink); margin-top: 3px; flex-shrink: 0; }
 .creds__title { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 0.98rem; color: var(--ink); }
