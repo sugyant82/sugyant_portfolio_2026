@@ -6,7 +6,7 @@ export default function Projects() {
     <section className="section" id="projects">
       <div className="container">
         <header className="section__head reveal">
-          <span className="section__kicker">04 — Showcase</span>
+          <span className="section__kicker">05 — Showcase</span>
           <h2 className="section__title">Things I&rsquo;ve built</h2>
           <p className="section__lead">
             A few personal projects — full-stack apps and APIs I ship on the side, outside of client work.
